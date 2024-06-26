@@ -1,5 +1,5 @@
 BasedOnStyle: LLVM
-ArrayInitializerAlignmentStyle: AIAS_Right
+# ArrayInitializerAlignmentStyle: AIAS_Right
 AllowShortBlocksOnASingleLine: Always
 AllowShortCaseLabelsOnASingleLine: true
 AllowShortIfStatementsOnASingleLine: AllIfsAndElse
@@ -9,7 +9,7 @@ AttributeMacros: ['Q_UNUSED', 'STACKLEFT_NOINLINE']
 BinPackArguments: false
 BinPackParameters: false
 BreakArrays: false
-BreakBeforeConceptDeclarationsStyle: Always
+# BreakBeforeConceptDeclarationsStyle: Always
 BreakConstructorInitializers: AfterColon
 BreakInheritanceList: AfterColon
 ConstructorInitializerIndentWidth: 2
@@ -19,9 +19,9 @@ IncludeIsMainRegex: ''
 IndentCaseLabels: true
 InsertNewlineAtEOF: true
 KeepEmptyLinesAtTheStartOfBlocks: false
-KeepEmptyLinesAtEOF: true
+# KeepEmptyLinesAtEOF: true
 QualifierAlignment: Right
-QualifierOrder: ['inline', 'static', 'friend', 'constexpr', 'type', 'const', 'volatile' , 'restrict' ]
+# QualifierOrder: ['inline', 'static', 'friend', 'constexpr', 'type', 'const', 'volatile' , 'restrict' ]
 RemoveSemicolon: true
 SeparateDefinitionBlocks: Always
 SortIncludes: CaseInsensitive

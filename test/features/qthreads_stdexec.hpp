@@ -26,15 +26,12 @@ struct qthreads_scheduler {
 
     static aligned_t task(void *arg) noexcept {
       auto *os = static_cast<operation_state *>(arg);
-      printf("Hello from qthreads in task! id = %i\n", qthread_id());
       stdexec::set_value(std::move(os->receiver));
       return 0;
     }
 
     friend void tag_invoke(stdexec::start_t, operation_state &os) noexcept {
-      aligned_t ret = 0;
-      int r = qthread_fork(&task, &os, &ret);
-      qthread_readFF(NULL, &ret);
+      int r = qthread_fork(&task, &os, NULL);
 
       if (r != QTHREAD_SUCCESS) {
         stdexec::set_error(std::move(os.receiver), r);

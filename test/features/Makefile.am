@@ -40,7 +40,8 @@ EXTRA_PROGRAMS = wavefront
 if ENABLE_CXX_TESTS
 TESTS += cxx_qt_loop \
 		 cxx_qt_loop_balance \
-		 cxx_qt_stdexec
+		 cxx_qt_stdexec \
+		 cxx_qt_stdexec_task_size
 endif
 
 check_PROGRAMS = $(TESTS)
@@ -110,6 +111,8 @@ cxx_qt_loop_SOURCES = cxx_qt_loop.cpp
 cxx_qt_loop_balance_SOURCES = cxx_qt_loop_balance.cpp
 
 cxx_qt_stdexec_SOURCES = cxx_qt_stdexec.cpp
+
+cxx_qt_stdexec_task_size_SOURCES = cxx_qt_stdexec_task_size.cpp
 
 wavefront_SOURCES = wavefront.c
 

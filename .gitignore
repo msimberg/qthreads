@@ -41,3 +41,5 @@ activate.sh
 *.test
 *.tar.bz2
 *.tar.gz
+spack.*
+.spack*
